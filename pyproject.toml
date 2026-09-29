@@ -1,0 +1,49 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "chatdeep-automation"
+version = "1.1.0"
+description = "Professional browser-less Python automation client for the chat-deep.ai browser chat (internal API, SSE streaming, Fast/Pro modes, images, quota management)"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { file = "LICENSE" }
+authors = [{ name = "3MH TECHNOLOGIES" }]
+maintainers = [{ name = "3MH TECHNOLOGIES" }]
+keywords = ["chat-deep", "deepseek", "automation", "sse", "cli", "turnstile", "browserless"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.13",
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Communications :: Chat",
+    "Topic :: Software Development :: Libraries",
+]
+dependencies = [
+    "requests>=2.28",
+]
+
+[project.urls]
+Homepage = "https://3mh.pages.dev/"
+"Author" = "https://3mh.pages.dev/"
+Telegram = "https://t.me/j49_c"
+Repository = "https://github.com/3mh-technologies/chatdeep-automation"
+"Bug Tracker" = "https://github.com/3mh-technologies/chatdeep-automation/issues"
+
+[project.optional-dependencies]
+browser = ["playwright>=1.40"]
+images = ["pillow>=9.0"]
+all = ["playwright>=1.40", "pillow>=9.0"]
+dev = ["pytest>=7", "playwright>=1.40", "pillow>=9.0"]
+
+[project.scripts]
+chatdeep = "chatdeep.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["chatdeep*"]
+
+[tool.setuptools.package-data]
+chatdeep = ["browser/*.js"]
