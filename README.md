@@ -10,6 +10,7 @@
 [![Python](https://img.shields.io/badge/Python-3.9%2B-blue?logo=python&logoColor=white)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](./LICENSE)
 [![Tests](https://img.shields.io/badge/tests-43%20passed-brightgreen)](./tests)
+[![CI](https://github.com/3MH-Technologies/chatdeep-automation/actions/workflows/tests.yml/badge.svg)](https://github.com/3MH-Technologies/chatdeep-automation/actions/workflows/tests.yml)
 [![Browser-less](https://img.shields.io/badge/browser--less-✔-orange)](#-محركات-جلب-توكن-turnstile-كل-الرسائل-تتطلب-توكن)
 
 </div>
@@ -276,7 +277,7 @@ python scripts/smoke_live.py  # فحص حي (لا يستهلك رسائل)
 git init -b main
 git add .
 git commit -m "Initial release v1.1.0 — ChatDeep Automation by 3MH TECHNOLOGIES"
-git remote add origin https://github.com/<username>/chatdeep-automation.git
+git remote add origin https://github.com/3MH-Technologies/chatdeep-automation.git
 git push -u origin main
 ```
 

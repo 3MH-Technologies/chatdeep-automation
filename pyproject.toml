@@ -47,3 +47,7 @@ include = ["chatdeep*"]
 
 [tool.setuptools.package-data]
 chatdeep = ["browser/*.js"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

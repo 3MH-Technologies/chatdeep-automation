@@ -21,6 +21,6 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install requests pillow pytest
+          pip install -e . pillow pytest
       - name: Run unit tests (offline)
-        run: pytest tests/ -q
+        run: python -m pytest tests/ -q
